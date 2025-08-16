@@ -13,3 +13,5 @@ function threeInOne(arr){
   // return the result array
   return result;
 }
+
+// splice removes a part of an array and can replace it with another part you provide, or just leave it contracted
