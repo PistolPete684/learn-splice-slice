@@ -1,16 +1,16 @@
 function threeInOne(arr){
-  // setup tab array
+  // create a tabulation array
   let result = [];
-  // itterate through the arr three numbers at a time
-  for (let i = 0; i < arr.length; i +=3) {
-    // take three numbers starting from i
+  // loop through the array three digits at a time
+  for (let i = 0; i < arr.length; i += 3) {
+    // create a copy of the  next three digits of the array
     let group = arr.slice(i, i + 3);
-    // add the three numbers together
+    // add the three digits together
     let sum = group.reduce((a, b) => a + b, 0);
-    // push the total to the result array
+    // push the total to the results tab array
     result.push(sum);
+    
   }
-  // return the result array
   return result;
 }
 
